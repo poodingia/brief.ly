@@ -1,3 +1,3 @@
 # BRIEFLY   
 
-```./graldew bootRun``` to start
+```./gradlew bootRun``` to start
