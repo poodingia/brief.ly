@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: briefly
+
+  data:
+    mongodb:
+      uri: mongodb+srv://poodingia1212:aNRdjveBiFSSLFGD@tom.vmdqr.mongodb.net/Tom
+      database: Tom
+      core:
+        MongoTemplate: true
+
+
+
+#
