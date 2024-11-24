@@ -4,8 +4,8 @@ spring:
 
   data:
     mongodb:
-      uri: mongodb+srv://poodingia1212:aNRdjveBiFSSLFGD@tom.vmdqr.mongodb.net/Tom
-      database: Tom
+      uri: mongod+srv://localhost:27017/db
+      database: db
       core:
         MongoTemplate: true
 
