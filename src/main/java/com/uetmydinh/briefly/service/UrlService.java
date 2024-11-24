@@ -6,6 +6,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
+import java.time.Instant;
+
 @Service
 public class UrlService {
     private final Logger log = LoggerFactory.getLogger(UrlService.class);
@@ -41,7 +43,7 @@ public class UrlService {
     }
 
     public void create(String id, String url) {
-        Url savedUrl = urlRepository.save(new Url(id, url));
+        Url savedUrl = urlRepository.save(new Url(id, url, Instant.now()));
         log.info("savedUrl: {}", savedUrl);
     }
 
